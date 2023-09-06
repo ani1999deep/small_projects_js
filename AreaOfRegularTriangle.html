@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculate the area of a regular triangle using javascript</title>
+</head>
+<body>
+      <script>
+            //Take a input from user
+            let num1=prompt("Take a 1st number");
+            let num2=prompt("Take a 2nd number");
+            let num3=prompt("Take a 3rd number");
+            let a=parseInt(num1);
+            let b=parseInt(num2);
+            let c=parseInt(num3);
+            //calculate area of triangle
+           let s=(a+b+c)/2;
+           let temp=s*(s-a)*(s-b)*(s-c);
+           let area=Math.sqrt(temp);
+           //Print
+           document.write("The area of triangle is===>>",area);
+      </script>
+</body>
+</html>
